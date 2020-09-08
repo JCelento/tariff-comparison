@@ -11,4 +11,4 @@ After that will be just a matter of building, and starting the application using
 Is possible to run the tests also on VisualStudio, if you can't see the "Test Explorer" right away you can add it by clicking into Test -> Windows -> Test Explorer (or using the short-cut Ctrl+E, T).
 
 ## How to send a request?
-When the application starts your default browser should open with the locahost domain and the port in which the application is currently running, for example let's say in my case its ``http://localhost:58129``, then the route to get the results should be ``http://localhost:58129/api/tariffComparison?consumption=[energy consumption in kWh/year]``
+When the application starts your default browser should open with the locahost domain and the port in which the application is currently running, for example, let's say in my case its ``http://localhost:58129``, then the route to get the results should be ``http://localhost:58129/api/tariffComparison?consumption=[energy consumption in kWh/year]``
