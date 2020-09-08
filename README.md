@@ -1,7 +1,7 @@
 # Energy tariff comparison API
 
 ## What is it?
-A Service to retrieve the tariffs comparison between two fictional energy providers via HTTP GET method
+A Service to retrieve the annual tariffs comparison between two fictional energy providers via HTTP GET method
 
 ## How to run it?
 Since it is an Asp.Net application you will need to have a version of VisualStudio installed on a Widows OS.
