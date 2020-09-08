@@ -2,15 +2,26 @@
 {
     public class BasicEletricTariff : Product
     {
-        public override string Name { get => "Basic eletric tariff"; }
-
         private const double baseCost = 5 * 12;
 
-        private const double consumptionCostPerKWh = 0.22;
+        private const double consumptionCostPerkWh = 0.22;
+
+        private int ConsumptionInkWhPerYear { get; set; }
+
+        public override string TariffName { get => "Basic eletric tariff"; }
+
+        public override double AnnualCosts => CalculateAnnualCost(ConsumptionInkWhPerYear);
+
+
+        public BasicEletricTariff(int consumptionInkWhPerYear)
+        {
+            ConsumptionInkWhPerYear = consumptionInkWhPerYear;
+        }
+
 
         public override double CalculateAnnualCost(int consumptionInKWhPerYear)
         {
-            return baseCost + (consumptionInKWhPerYear * consumptionCostPerKWh);
+            return baseCost + (consumptionInKWhPerYear * consumptionCostPerkWh);
         }
     }
 }
