@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\TariffComparisonControllerTest.cs" />
-    <Compile Include="Models\BasicEletricTariffTest.cs" />
+    <Compile Include="Models\BasicElectricityTariffTest.cs" />
     <Compile Include="Models\PackagedTariffTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\TariffComparisonServiceTest.cs" />
