@@ -17,11 +17,10 @@ namespace TariffComparisonAPI.Services
 
         public List<Product> GetTariffComparison(int consumptionInkWhPerYear)
         {
-            products.Add(new BasicEletricTariff(consumptionInkWhPerYear));
+            products.Add(new BasicElectricityTariff(consumptionInkWhPerYear));
             products.Add(new PackagedTariff(consumptionInkWhPerYear));
 
            return products.OrderBy(product => product.AnnualCosts).ToList();
-
         }
 
 

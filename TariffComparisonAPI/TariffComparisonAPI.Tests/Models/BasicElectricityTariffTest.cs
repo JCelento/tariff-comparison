@@ -3,10 +3,10 @@
 namespace TariffComparisonAPI.Tests.Models
 {
     [TestClass]
-    public class BasicEletricTariffTest
+    public class BasicElectricityTariffTest
     {
         [TestMethod]
-        public void BasicEletricTariffAnnualCosts()
+        public void BasicEletricTariffAnnualCosts_WhenConsumptionIs()
         {
         }
     }
