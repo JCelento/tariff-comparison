@@ -20,9 +20,8 @@ namespace TariffComparisonAPI.Services
             products.Add(new BasicEletricTariff(consumptionInkWhPerYear));
             products.Add(new PackagedTariff(consumptionInkWhPerYear));
 
-            products.OrderBy(product => product.AnnualCosts);
+           return products.OrderBy(product => product.AnnualCosts).ToList();
 
-            return products;
         }
 
 
